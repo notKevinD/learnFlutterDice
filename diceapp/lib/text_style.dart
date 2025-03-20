@@ -2,8 +2,8 @@ import "package:flutter/material.dart";
 
 
 class Textstyle extends StatelessWidget {
-  const Textstyle({
-    required this.text,
+  const Textstyle(this.text,{
+    
     super.key
   });
 

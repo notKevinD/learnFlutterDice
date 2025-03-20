@@ -20,7 +20,7 @@ class Tes extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Textstyle(text: "Hello",),
+        child: Textstyle("Hello",),
       ),
     );
   }
