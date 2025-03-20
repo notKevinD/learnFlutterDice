@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "package:diceapp/text_style.dart";
 
 class Tes extends StatelessWidget {
   const Tes({
@@ -19,7 +20,7 @@ class Tes extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Text('Hello World!', style: TextStyle(color: Colors.white, fontSize: 28.5),),
+        child: Textstyle(text: "Hello",),
       ),
     );
   }
