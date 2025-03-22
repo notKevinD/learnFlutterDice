@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
-import 'package:diceapp/tes.dart';  
+import 'package:diceapp/tes.dart';
 
 void main() {
   runApp(
-      MaterialApp(
-        home: Scaffold(
-          body: Tes(),
+    const MaterialApp(
+      home: Scaffold(
+        body: Tes(
+          Color.fromARGB(255, 26, 2, 80),
+          Color.fromARGB(255, 207, 0, 10),
         ),
       ),
+    ),
   );
 }
-

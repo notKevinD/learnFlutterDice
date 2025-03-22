@@ -1,26 +1,26 @@
+import 'package:diceapp/dice_roller.dart';
 import 'package:flutter/material.dart';
-import "package:diceapp/text_style.dart";
+// import "package:diceapp/text_style.dart";
 
 class Tes extends StatelessWidget {
-  const Tes({
-    super.key,
-  });
+  const Tes(this.color1, this.color2, {super.key});
+  final Color color1;
+  final Color color2;
+
+  
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(255, 26, 2, 80),
-            Color.fromARGB(255, 207, 0, 10),
-          ],
+          colors: [color1, color2],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: Textstyle("Hello",),
+      child: Center(
+        child: DiceRoller()
       ),
     );
   }
